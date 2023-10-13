@@ -21,3 +21,17 @@ route::get('/jewellery' ,[usercontroller::class, 'jewellery'])->name("user.jewel
 route::get('/contact' ,[usercontroller::class, 'contact'])->name("user.contact");
 route::get('/sign_in' ,[usercontroller::class, 'sign_in'])->name("user.sign_in");
 route::get('/sign_up' ,[usercontroller::class, 'sign_up'])->name("user.sign_up");
+
+
+route::post('/sign_up' ,[usercontroller::class, 'sign_up_logic'])->name("user.sign_up");
+route::post('/sign_in' ,[usercontroller::class, 'sign_in_logic'])->name("user.sign_in");
+route::get('/create' ,[usercontroller::class, 'read'])->name("create");
+
+
+
+route::get('/contactRead' ,[usercontroller::class, 'read'])->name("read");
+route::post("/contactins", [usercontroller::class, "create"]);
+route::get("/condelete/{id}", [usercontroller::class, "delete"]);
+route::get("/conupdate/{id}", [usercontroller::class, "updatecontact"]);
+route::post("/conedit/{id}", [usercontroller::class, "editcontact"]);
+route::get("/userregister", [usercontroller::class, 'userregister']);
