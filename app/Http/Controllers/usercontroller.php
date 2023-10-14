@@ -49,7 +49,7 @@ class usercontroller extends Controller
     }
 
     function product() {
-        return view('user.products');
+        return view('user.product');
     }
 
     function admin() {

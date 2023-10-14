@@ -23,7 +23,7 @@ route::get('/sign_in' ,[usercontroller::class, 'sign_in'])->name("user.sign_in")
 route::get('/sign_up' ,[usercontroller::class, 'sign_up'])->name("user.sign_up");
 route::get('/cart' ,[usercontroller::class, 'cart'])->name("user.cart");
 route::get('/checkout' ,[usercontroller::class, 'checkout'])->name("user.checkout");
-route::get('/product' ,[usercontroller::class, 'product'])->name("user.products");
+route::get('/product' ,[usercontroller::class, 'product'])->name("user.product");
 route::get('/shop' ,[usercontroller::class, 'shop'])->name("user.shop");
 route::get('/admin' ,[usercontroller::class, 'read'])->name("admin.admin");
 route::get('/update' ,[usercontroller::class, 'update'])->name("admin.update");
