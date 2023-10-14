@@ -21,15 +21,22 @@ route::get('/jewellery' ,[usercontroller::class, 'jewellery'])->name("user.jewel
 route::get('/contact' ,[usercontroller::class, 'contact'])->name("user.contact");
 route::get('/sign_in' ,[usercontroller::class, 'sign_in'])->name("user.sign_in");
 route::get('/sign_up' ,[usercontroller::class, 'sign_up'])->name("user.sign_up");
+route::get('/cart' ,[usercontroller::class, 'cart'])->name("user.cart");
+route::get('/checkout' ,[usercontroller::class, 'checkout'])->name("user.checkout");
+route::get('/product' ,[usercontroller::class, 'product'])->name("user.products");
+route::get('/shop' ,[usercontroller::class, 'shop'])->name("user.shop");
+route::get('/admin' ,[usercontroller::class, 'read'])->name("admin.admin");
+route::get('/update' ,[usercontroller::class, 'update'])->name("admin.update");
+route::get('/admin' ,[usercontroller::class, 'admin'])->name("admin.admin");
 
 
 route::post('/sign_up' ,[usercontroller::class, 'sign_up_logic'])->name("user.sign_up");
 route::post('/sign_in' ,[usercontroller::class, 'sign_in_logic'])->name("user.sign_in");
-route::get('/create' ,[usercontroller::class, 'read'])->name("create");
+// route::get('/create' ,[usercontroller::class, 'read'])->name("create");
 
 
 
-route::get('/contactRead' ,[usercontroller::class, 'read'])->name("read");
+// route::get('/contactRead' ,[usercontroller::class, 'read'])->name("read");
 route::post("/contactins", [usercontroller::class, "create"]);
 route::get("/condelete/{id}", [usercontroller::class, "delete"]);
 route::get("/conupdate/{id}", [usercontroller::class, "updatecontact"]);

@@ -14,22 +14,23 @@
         </ul>
         
         <!-- Form -->
-        <form  action="" method="post">
+        <form  action="/sign_up" method="post" class="sign_form">
+          @csrf
           <!-- name input -->
           <div class="first-input input__block first-input__block">
-             <input type="name" placeholder="name" class="input" id="name"   />
+             <input type="name" placeholder="name" name="name" class="input" id="name"   />
           </div>
           <!-- email input -->
           <div class="input__block">
-            <input type="email" placeholder="Email" class="input" id="email"   />
+            <input type="email" placeholder="Email"  name="email" class="input" id="email"   />
          </div>
           <!-- password input -->
           <div class="input__block">
-             <input type="password" placeholder="Password" class="input" id="password" />
+             <input type="password" placeholder="Password" name="password" class="input" id="password" />
           </div>
           <!-- repeat password input -->
           <div class="input__block">
-             <input type="password" placeholder="confirm password" class="input" id="confirm password"    />
+             <input type="password" placeholder="confirm password" name=confirmpass class="input" id="confirm password"    />
           </div>
           <!-- sign in button -->
           <button class="signin__btn">

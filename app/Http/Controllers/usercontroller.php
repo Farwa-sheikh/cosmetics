@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\User;
+use App\Models\crud;
+use App\Models\Contact;
 use Illuminate\support\Facades\Hash;
 use Illuminate\support\Facades\Auth;
 
@@ -33,11 +36,38 @@ class usercontroller extends Controller
         return view('user.sign_up');
     }
 
+    function cart() {
+        return view('user.cart');
+    }
+
+    function checkout() {
+        return view('user.checkout');
+    }
+
+    function shop() {
+        return view('user.shop');
+    }
+
+    function product() {
+        return view('user.products');
+    }
+
+    function admin() {
+        return view('admin.admin');
+    }
+
+    function update() {
+        return view('admin.update');
+    }
+
+    
+
  public function sign_up_logic( Request $request ) {
-        $user = new User;
+        $user = new user;
         $user->name = $request->name;
         $user->email = $request->email;
-        $user->password = $request->pass;
+        $user->password = $request->password;
+        $user->password = $request->confirmpass;
         $user->save();
         return redirect( '/index' );
 
@@ -46,13 +76,13 @@ class usercontroller extends Controller
   public function sign_in_logic( Request $request ) {
         $req = $request->validate( [
             'email'  => 'required|email',
-            'pass' => 'required|string',
+            'password' => 'required|string',
 
         ] );
 
-        $user = User::where( 'email', $req[ 'email' ] )->first();
-        if ( $user && hash::check( $req[ 'pass' ], $user ->password ) ) {
-            Auth::login( $user );
+        $users = User::where( 'email', $req[ 'email' ] )->first();
+        if ( $users && hash::check( $req[ 'password' ], $users ->password ) ) {
+            Auth::login( $users );
             return redirect( '/' );
         } else {
             return redirect()->back();
@@ -62,12 +92,14 @@ class usercontroller extends Controller
 
 
   public function create( Request $request ) {
-        $user = new Contact;
-        $user->name = $request->name;
-        $user->email = $request->email;
-        $user->message = $request->text;
+        $users = new Contact;
+        $users->name = $request->name;
+        $users->email = $request->email;
+        $users->website = $request->website;
+        $users->message = $request->message;
 
-        $user->save();
+
+        $users->save();
 
         return redirect()->back()->with( 'abc', 'message sent to admin' );
 
@@ -75,21 +107,21 @@ class usercontroller extends Controller
 
 
   public function read() {
-        $user = Contact ::all();
+        $users = Contact ::all();
 
         return view( 'admin.admin', compact( 'user' ) );
     }
 
     public function delete( $id ) {
-        $user = Contact::find( $id );
-        $user->delete();
+        $users = Contact::find( $id );
+        $users->delete();
         return redirect()->back()->with( 'dlt', 'data deleted' );
     }
 
     public function updatecontact( $id ) {
-        $user = Contact::find( $id );
+        $users = Contact::find( $id );
 
-        return view( 'admin.update', compact( 'user' ) );
+        return view( 'admin.update', compact( 'users$users' ) );
     }
 
     public function editcontact( $id, Request $req ) {
@@ -97,19 +129,20 @@ class usercontroller extends Controller
         $contact = Contact::find( $id );
         $contact->name = $req->name;
         $contact->email = $req->email;
+        $contact->website = $req->website;
         $contact->message = $req->message;
         $contact->update();
 
-        $user = Contact ::all();
+        $users = Contact ::all();
 
         return view( 'admin.admin', compact( 'user' ) );
 
     }
 
     public function userregister(){
-    $user = User ::all();
+    $users = User ::all();
 
-    return view( 'admin.userregister', compact( 'user' ) );
+    return view( 'admin.userregister', compact( 'users$users' ) );
 
     }
 

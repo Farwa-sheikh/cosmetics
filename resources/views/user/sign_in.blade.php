@@ -14,14 +14,15 @@
         </ul>
         
         <!-- Form -->
-        <form  action="" method="post">
+        <form  action="/sign_in" method="post" class="sign_form">
+             @csrf
           <!-- email input -->
           <div class="first-input input__block first-input__block">
-             <input type="email" placeholder="Email" class="input" id="email"   />
+             <input type="email" placeholder="Email" name="email" class="input" id="email"   />
           </div>
           <!-- password input -->
           <div class="input__block">
-             <input type="password" placeholder="Password" class="input" id="password"    />
+             <input type="password" placeholder="Password" name="password" class="input" id="password"    />
           </div>
           <!-- sign in button -->
           <button class="signin__btn">
