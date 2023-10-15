@@ -52,14 +52,23 @@ class usercontroller extends Controller
         return view('user.product');
     }
 
-    function admin() {
-        return view('admin.admin');
-    }
+    // function admin() {
+    //     return view('admin.admin');
+    // }
 
-    function update() {
-        return view('admin.update');
+    // function update() {
+    //     return view('admin.update');
+    // }
+    function dashboard() {
+        return view('admin.dashboard');
     }
-
+    function register() {
+        return view('admin.auth_register');
+    }
+    function login() {
+        return view('admin.auth_login');
+    }
+        
     
 
  public function sign_up_logic( Request $request ) {
