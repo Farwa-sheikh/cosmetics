@@ -25,7 +25,7 @@ route::get('/cart' ,[usercontroller::class, 'cart'])->name("user.cart");
 route::get('/checkout' ,[usercontroller::class, 'checkout'])->name("user.checkout");
 route::get('/product' ,[usercontroller::class, 'product'])->name("user.product");
 route::get('/shop' ,[usercontroller::class, 'shop'])->name("user.shop");
-route::get('/admin' ,[usercontroller::class, 'read'])->name("admin.admin");
+// route::get('/admin' ,[usercontroller::class, 'read'])->name("admin.admin");
 route::get('/update' ,[usercontroller::class, 'update'])->name("admin.update");
 route::get('/admin' ,[usercontroller::class, 'admin'])->name("admin.admin");
 
