@@ -68,7 +68,7 @@
                         <ul class="product__hover">
                             <li><a href="img/product/product-1.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
                             <li><a href="#"><span class="icon_heart_alt"></span></a></li>
-                            <li><a href="/products"><span class="icon_bag_alt"></span></a></li>
+                            <li><a href="/product"><span class="icon_bag_alt"></span></a></li>
                         </ul>
                     </div>
                     <div class="product__item__text">
@@ -90,7 +90,7 @@
                         <ul class="product__hover">
                             <li><a href="img/product/product-2.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
                             <li><a href="#"><span class="icon_heart_alt"></span></a></li>
-                            <li><a href="/products"><span class="icon_bag_alt"></span></a></li>
+                            <li><a href="/product"><span class="icon_bag_alt"></span></a></li>
                         </ul>
                     </div>
                     <div class="product__item__text">
@@ -135,7 +135,7 @@
                         <ul class="product__hover">
                             <li><a href="img/product/product-4.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
                             <li><a href="#"><span class="icon_heart_alt"></span></a></li>
-                            <li><a href="/products"><span class="icon_bag_alt"></span></a></li>
+                            <li><a href="/product"><span class="icon_bag_alt"></span></a></li>
                         </ul>
                     </div>
                     <div class="product__item__text">
@@ -157,7 +157,7 @@
                         <ul class="product__hover">
                             <li><a href="img/product/product-5.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
                             <li><a href="#"><span class="icon_heart_alt"></span></a></li>
-                            <li><a href="/products"><span class="icon_bag_alt"></span></a></li>
+                            <li><a href="/product"><span class="icon_bag_alt"></span></a></li>
                         </ul>
                     </div>
                     <div class="product__item__text">
@@ -180,7 +180,7 @@
                         <ul class="product__hover">
                             <li><a href="img/product/product-6.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
                             <li><a href="#"><span class="icon_heart_alt"></span></a></li>
-                            <li><a href="/products"><span class="icon_bag_alt"></span></a></li>
+                            <li><a href="/product"><span class="icon_bag_alt"></span></a></li>
                         </ul>
                     </div>
                     <div class="product__item__text">
@@ -202,7 +202,7 @@
                         <ul class="product__hover">
                             <li><a href="img/product/product-7.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
                             <li><a href="#"><span class="icon_heart_alt"></span></a></li>
-                            <li><a href="/products"><span class="icon_bag_alt"></span></a></li>
+                            <li><a href="/product"><span class="icon_bag_alt"></span></a></li>
                         </ul>
                     </div>
                     <div class="product__item__text">
@@ -225,7 +225,7 @@
                         <ul class="product__hover">
                             <li><a href="img/product/product-8.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
                             <li><a href="#"><span class="icon_heart_alt"></span></a></li>
-                            <li><a href="/products"><span class="icon_bag_alt"></span></a></li>
+                            <li><a href="/product"><span class="icon_bag_alt"></span></a></li>
                         </ul>
                     </div>
                     <div class="product__item__text">
