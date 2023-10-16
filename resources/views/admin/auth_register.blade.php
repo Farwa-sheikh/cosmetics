@@ -2,9 +2,13 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Modernize Free</title>
+<meta charset="UTF-8">
+    <meta name="description" content="Ashion Template">
+    <meta name="keywords" content="Ashion, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title> Ashion | register
+</title>
   <link rel="shortcut icon" type="image/png" href="/assets/images/logos/favicon.png" />
   <link rel="stylesheet" href="/assets/css/styles.min.css" />
 </head>
@@ -21,7 +25,7 @@
             <div class="card mb-0">
               <div class="card-body">
                 <a href="./index.html" class="text-nowrap logo-img text-center d-block py-3 w-100">
-                  <img src="/assets/images/logos/dark-logo.svg" width="180" alt="">
+                  <img src="/img/logo.png" width="180" alt="">
                 </a>
                 <p class="text-center">Your Social Campaigns</p>
                 <form>

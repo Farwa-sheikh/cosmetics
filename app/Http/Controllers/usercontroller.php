@@ -62,10 +62,10 @@ class usercontroller extends Controller
     function dashboard() {
         return view('admin.dashboard');
     }
-    function register() {
+    function auth_register() {
         return view('admin.auth_register');
     }
-    function login() {
+    function auth_login() {
         return view('admin.auth_login');
     }
         
