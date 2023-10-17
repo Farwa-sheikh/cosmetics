@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\User;
 use App\Models\crud;
 use App\Models\Contact;
+use Illuminate\support\Facades\DB;
 use Illuminate\support\Facades\Hash;
 use Illuminate\support\Facades\Auth;
 
@@ -155,5 +156,21 @@ class usercontroller extends Controller
 
     }
 
+
+    public function admin(){
+        return view("admin.adminlogin");
+    }
+
+    public function admin_logic(Request $req){
+        $email = $req->email;
+        $password = $req->password;
+        $login = DB::table("adminlogins")->where(['email' => $email, 'password' => $password])->first();
+
+        if($login != ""){
+            return redirect("/admin/dashboard");
+        }else{
+            return redirect()->back()->with("AdminLoginMessage", "Incorrect Email or Password");
+        }
+    }
 }
 

@@ -45,3 +45,6 @@ route::get("/condelete/{id}", [usercontroller::class, "delete"]);
 route::get("/conupdate/{id}", [usercontroller::class, "updatecontact"]);
 route::post("/conedit/{id}", [usercontroller::class, "editcontact"]);
 route::get("/userregister", [usercontroller::class, 'userregister']);
+
+route::get("/adminpanel", [usercontroller::class, "admin"]);
+route::post("/adminIndex", [usercontroller::class, "admin_logic"]);
