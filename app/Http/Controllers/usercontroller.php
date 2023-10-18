@@ -45,8 +45,8 @@ class usercontroller extends Controller
         return view('user.checkout');
     }
 
-    function shop() {
-        return view('user.shop');
+    function About() {
+        return view('user.About');
     }
 
     function product() {

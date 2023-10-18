@@ -7,35 +7,35 @@
         <div class="heropage">
 
             <div class="heropagepic">
-              <img id="pic" src="/img/categories/heropagepic1.jpg" alt="" srcset="">
+              <img id="pic" src="/img/categories/banner.jpg" alt="" srcset="">
               <div class="text-overlay">
-                <h1>Meet The lines of The .. Millineum</h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi officia modi fugit vel! Eveniet
-                  reprehenderit labore</p>
+                <h1>Elevate Your Beauty & Style </h1>
+                <p>"Discover the Perfect Balance of Glamour and Elegance with Our Handpicked Selection."</p>
                 <div class="button">
                   <button class="button1">Check Collection</button>
                   <button class="button2">Shop Now</button>
+                  
                 </div>
               </div>
-              <div class="arrow arrow-left" onclick="prevSlide()">&#8249;</div>
-              <div class="arrow arrow-right" onclick="nextSlide()">&#8250;</div>
+              <!-- <div class="arrow arrow-left" onclick="prevSlide()">&#8249;</div>
+              <div class="arrow arrow-right" onclick="nextSlide()">&#8250;</div> -->
             </div>
            
       
-          <!-- <div class="heropagepic2">
-            <img id="pic" src="/img/categories/heropagepic1.png" alt="" srcset="">
+          <div class="heropagepic2">
+            <img id="pic" src="/img/categories/banner1.jpg" alt="" srcset="">
             <div class="text-overlay">
-              <h3>Image 1 Text</h3>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores, quod?</p>
-              <div class="button">
+              <!-- <h3>Image 1 Text</h3>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores, quod?</p> -->
+              <!-- <div class="button">
                 <button class="button1">Check Collection</button>
                 <button class="button2">Button 1</button>
-              </div>
+              </div> -->
             </div>
-            <div class="arrow arrow-left" onclick="prevSlide()">&#8249;</div>
-            <div class="arrow arrow-right" onclick="nextSlide()">&#8250;</div>
+            <!-- <div class="arrow arrow-left" onclick="prevSlide()">&#8249;</div>
+            <div class="arrow arrow-right" onclick="nextSlide()">&#8250;</div> -->
           </div>
-       -->
+      
         </div>
 </section>
 <!-- Categories Section End -->
@@ -467,7 +467,7 @@
                 <div class="discount__text">
                     <div class="discount__text__title">
                         <span>Discount</span>
-                        <h2>Summer 2019</h2>
+                        <h2>Summer 2023</h2>
                         <h5><span>Sale</span> 50%</h5>
                     </div>
                     <div class="discount__countdown" id="countdown-time">
